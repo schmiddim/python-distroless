@@ -7,7 +7,7 @@ RUN apt-get update && \
     update-ca-certificates && \
     python3 -m venv /venv && \
     /venv/bin/pip install --upgrade pip
-RUN cat /etc/hosts
+
 # Build the virtualenv as a separate step: Only re-execute this step when requirements.txt changes
 FROM build AS build-venv
 COPY requirements.txt /requirements.txt
@@ -24,7 +24,7 @@ FROM $RUN_IMAGE
 COPY --from=build-venv /venv /venv
 COPY --from=build-venv /usr/share/zoneinfo /usr/share/zoneinfo
 COPY --from=build-venv /etc/ssl/certs /etc/ssl/certs
-#COPY --from=build-venv /etc/nsswitch.conf /etc/nsswitch.conf
+
 
 
 COPY ./project /app
