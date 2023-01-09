@@ -1,0 +1,49 @@
+HELP.md
+.pytest_cache
+dist/
+**/__pycache__
+.env
+venv
+.graphqlconfig
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+.vscode
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.venv
+report.xml
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+alertmanagerstandbyduty/contacts.json

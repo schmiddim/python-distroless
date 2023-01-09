@@ -1,0 +1,12 @@
+requests
+jicson
+flask
+pyyaml
+kubernetes
+pytest
+pytest-mock
+freezegun
+prometheus-flask-exporter
+elastic-apm==6.13.2
+blinker==1.5
+gunicorn
